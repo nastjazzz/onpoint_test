@@ -9,8 +9,14 @@
     src: url("../media/fonts/14080.ttf");
 }
 
-.tab1 {
+.wrapper {
     max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.tab1 {
+    height: 100vh;
     /*width: 100vw;*/
 
     background-image: url("../media/first_bcg.jpg");
@@ -18,6 +24,7 @@
     background-repeat: no-repeat;
     background-attachment: local;
 
+    scroll-snap-align: start;
     /*padding: 145px 75px;*/
 }
 .heading {
@@ -31,14 +38,14 @@
 }
 
 .tab2 {
-    max-height: 100vh;
+    height: 100vh;
     width: 100%;
 
     background-image: url("../media/second_bcg.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: local;
-
+    scroll-snap-align: start;
 }
 .heading2 {
     font-family: "Gotham Pro Light","Gotham Pro", sans-serif;
@@ -56,7 +63,7 @@
 }
 
 .tab3 {
-    max-height: 100vh;
+    height: 100vh;
     width: 100%;
 
     background-image: url("../media/bcg3.jpg");
@@ -64,15 +71,16 @@
     background-repeat: no-repeat;
     background-attachment: local;
 
-    padding-top: 115px;
-    padding-left: 85px;
-    padding-bottom: 15px;
-    padding-right: 15px;
+    padding: 115px 15px 15px 85px;
+    scroll-snap-align: start;
+
+    color: white;
 }
 .heading3 {
     font-family: "Gotham Pro", sans-serif;
     font-size: 30px;
     color: #ffffff;
+    margin-bottom: 25px;
 }
 .slider__wrap {
     width: 100%;

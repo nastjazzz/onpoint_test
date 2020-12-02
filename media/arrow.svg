@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 35" width="6" height="35">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="box_2">
+		<g id="tab_2">
+			<g id="icons">
+				<g id="arrows">
+					<path id="Rectangle 11 copy 30" class="shp0" d="M3.12 0.5L2.2 0.5L2.3 25.41L3.21 25.41L3.12 0.5ZM5.5 24.96L0.01 24.96L2.79 34.5L5.5 24.96Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
