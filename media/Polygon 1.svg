@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 56" width="43" height="56">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #d1eaff;stroke: #ffffff;stroke-opacity:0.5;stroke-width: 20 }
+	</style>
+	<g id="box_2">
+		<g id="toggle">
+			<path id="Polygon 1" class="shp0" d="M41.95 30.54L29.62 45.55L10.85 55.19L1.74 35.9L0.13 8.57L18.89 0L43.02 17.68L41.95 30.54Z" />
+		</g>
+	</g>
+</svg>
