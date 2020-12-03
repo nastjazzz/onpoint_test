@@ -1,0 +1,182 @@
+/* Центральная горизонтальная вкладка */
+
+.scheme2 {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+/* прямоугольник на 2ой схеме */
+.scheme2 .rectangle {
+    position: relative;
+    width: 390px;
+    height: 140px;
+
+    line-height: 140px;
+    margin: 0 auto;
+    transform: translateY(170px);
+}
+
+/* стрелки у прямоугольника */
+.ill div img {
+    position: absolute;
+    width: 6px;
+    height: 35px;
+}
+.ill div:nth-child(1) img {
+    top: -35px;
+    left: 7%;
+}
+.ill div:nth-child(2) img {
+    top: -35px;
+    left: 50%;
+}
+.ill div:nth-child(3) img {
+    top: -35px;
+    left: 90%;
+}
+.ill div:nth-child(4) img {
+    left: 90%;
+    transform: rotate(180deg);
+}
+.ill div:nth-child(5) img {
+    left: 50%;
+    transform: rotate(180deg);
+}
+.ill div:nth-child(6) img {
+    left: 7%;
+    transform: rotate(180deg);
+}
+.ill div:nth-child(7) img {
+    top: 50px;
+    left: -20px;
+    transform: rotate(-90deg);
+}
+.ill div:nth-child(8) img {
+    top: 50px;
+    right: -20px;
+    transform: rotate(90deg);
+}
+
+/* части схемы */
+.scheme2-item {
+    position: absolute;
+    text-align: center;
+}
+.scheme2-item.b-cells {
+    top: 0;
+    left: 365px;
+}
+.scheme2-item.incretin-effect {
+    height: 140px;
+    top: 25px;
+    left: 200px;
+}
+.scheme2-item.a-cells {
+    top: 25px;
+    left: 520px;
+}
+.scheme2-item.fat-cells {
+    width: 85px;
+    top: 216px;
+    left: 710px;
+}
+.scheme2-item.muscles {
+    top: 340px;
+    left: 520px;
+}
+.scheme2-item.liver {
+    width: 70px;
+    top: 340px;
+    left: 365px;
+}
+.scheme2-item.brain {
+    width: 80px;
+    top: 340px;
+    left: 200px;
+}
+.scheme2-item.kidneys {
+    width: 85px;
+    top: 216px;
+    left: 10px;
+    text-align: right;
+}
+.scheme2-item.kidneys .circle {
+    transform: translate(90px, -80px);
+}
+.scheme2-item.fat-cells .circle {
+    transform: translate(-80px, -100px);
+}
+.scheme2-item.muscles .circle::after,
+.scheme2-item.liver .circle::after{
+    width: 60px;
+    height: 60px;
+}
+
+.incretin-effect::before {
+    content: "Инкретиновый эффект";
+
+    display: block;
+    width: 140px;
+    height: 45px;
+
+    text-align: end;
+    transform: translate(-150px, 50px);
+}
+.incretin-effect::after {
+    content: "2";
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    font-size: 36px;
+    font-weight: bold;
+    transform: translate(5px, -60px);
+}
+.a-cells::before {
+    content: "3";
+    display: block;
+    width: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    transform: translate(25px, 55px);
+}
+.a-cells::after {
+    content: "Дефект α-клеток";
+    display: block;
+    width: 85px;
+    height: 40px;
+    transform: translate(75px, -60px);
+
+}
+
+.fat-cells .circle::after,
+.brain .circle::after,
+.kidneys .circle::after {
+    content: " ";
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fat-cells .circle::after {
+    background-image: url("../media/lipid copy 2.svg");
+}
+.brain .circle::after {
+    background-image: url("../media/brain.svg");
+}
+.kidneys .circle::after {
+    background-image: url("../media/lipid copy.svg");
+    background-position: unset;
+}
+.scheme2-item.b-cells .circle::after {
+    height: 60px;
+    width: 60px;
+    font-size: 65px;
+}

@@ -15,73 +15,60 @@
     scroll-snap-type: y mandatory;
 }
 
-.tab1 {
+.section {
     height: 100vh;
-    /*width: 100vw;*/
 
-    background-image: url("../media/first_bcg.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: local;
-
     scroll-snap-align: start;
-    /*padding: 145px 75px;*/
-}
-.heading {
-    /*width: 745px;*/
 
+    color: #fff;
+}
+
+.section__title {
     font-family: "Gotham Pro", sans-serif;
     font-size: 50px;
-    letter-spacing: -1px;
+}
 
+.tab1 {
+    background-image: url("../media/first_bcg.jpg");
+    /*padding: 145px 75px;*/
+}
+
+.tab1__title {
+    width: 745px;
+
+    letter-spacing: -1px;
     color: #0d319c;
 }
 
 .tab2 {
-    height: 100vh;
-    width: 100%;
-
     background-image: url("../media/second_bcg.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: local;
-    scroll-snap-align: start;
 }
-.heading2 {
-    font-family: "Gotham Pro Light","Gotham Pro", sans-serif;
-    width: 481px;
-    height: inherit;
 
-    font-size: 50px;
-    color: #fff;
-    /*font-weight: 300;*/
+.tab2__title {
+    width: 481px;
+
+    font-weight: 100;
     text-align: center;
-    margin: 0 auto;
-    /* margin-top: 250px; */
-    padding: 250px 0;
     text-shadow: 1px 1px 70px #FFFFFF;
+
+    margin: 0 auto;
+    padding: 250px 0;
 }
 
 .tab3 {
-    height: 100vh;
-    width: 100%;
-
     background-image: url("../media/bcg3.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: local;
-
-    padding: 115px 15px 15px 85px;
-    scroll-snap-align: start;
-
-    color: white;
 }
-.heading3 {
+
+.slide__title {
     font-family: "Gotham Pro", sans-serif;
     font-size: 30px;
-    color: #ffffff;
+    font-weight: 100;
     margin-bottom: 25px;
 }
+
 .slider__wrap {
     width: 100%;
 }

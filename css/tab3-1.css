@@ -1,0 +1,148 @@
+/* обертка горизонтальных слайдов */
+.slide__wrap {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+/* горизонтальные слайды */
+.slide {
+    height: 80vh;
+    min-width: 100vw;
+    scroll-snap-align: start;
+
+    font-family: "Lato", sans-serif;
+}
+/* цифры на схеме */
+b {
+    font-size: 36px;
+}
+/* общие круги на схеме */
+.circle {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    margin: 5px;
+}
+/* прямоугольник */
+.rectangle {
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+/* Левая горизонтальная вкладка */
+
+.scheme {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    font-size: 23px;
+    margin: 0 auto;
+}
+
+.scheme .rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+
+    width: 250px;
+    height: 90px;
+
+    font-size: 20px;
+    line-height: 85px;
+}
+
+/* стрелочки */
+.scheme .rectangle img {
+    position: absolute;
+    width: 62px;
+}
+.scheme .rectangle img:nth-child(1) {
+    top: 50%;
+    right: -30%;
+    transform: rotate(180deg);
+}
+.scheme .rectangle img:nth-child(2) {
+    top: 50%;
+    left: -30%;
+}
+.scheme .rectangle img:nth-child(3) {
+    top: -55%;
+    left: 40%;
+    transform: rotate(90deg);
+}
+.alone-arrow {
+    width: 160px;
+    height: 135px;
+}
+.alone-arrow.left {
+    transform: translate(100px, 145px);
+}
+.alone-arrow.right {
+    transform: translate(355px, 10px);
+}
+.alone-arrow.right img {
+    transform: scale(-1, 1);
+}
+/* части схемы в левой вкладке */
+.scheme-item {
+    position: absolute;
+    width: 90px;
+    height: 160px;
+    text-align: center;
+}
+/* круги на левой вкладке */
+.scheme-item .circle {
+    width: 80px;
+    height: 80px;
+}
+
+.b-cells {
+    width: 100px;
+    top: 5%;
+    left: 44%;
+}
+
+.muscles {
+    bottom: 0;
+    left: 0;
+}
+
+.liver {
+    bottom: 0;
+    right: 0;
+}
+
+.b-cells .circle::after,
+.muscles .circle::after,
+.liver .circle::after {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+.b-cells .circle::after {
+    content: "β";
+
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.muscles .circle::after {
+    content: " ";
+
+    background-image: url("../media/musle.svg");
+    background-size: 100% 100%;
+}
+
+.liver .circle::after {
+    content: " ";
+
+    background-image: url("../media/Capa 1.svg");
+    background-size: 70%;
+    background-position: 50%, 50%;
+}
