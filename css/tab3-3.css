@@ -1,0 +1,235 @@
+.slide__content.scheme3 {
+    display: flex;
+    width: calc(100vw - 100px);
+    margin: 0 auto;
+}
+
+.col {
+    width: calc(100% / 3);
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.scheme3-item.text {
+    font-size: 15px;
+}
+
+/* левая колонка */
+.left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 80px;
+    margin-right: 20px;
+
+}
+.left-block .scheme3-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.left-block .scheme3-item.text {
+    margin: 0 10px 0 0;
+}
+.left-block div img {
+    margin-right: 30px;
+}
+.microflora div:nth-child(1) {
+    width: 120px;
+}
+.infection div:nth-child(1) {
+    width: 215px;
+}
+.left-block .scheme3-item .circle::after {
+    content: " ";
+
+    display: block;
+    width: 60px;
+    height: 60px;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.microflora .circle::after {
+    background-image: url("../media/brain1 copy.svg");
+}
+.infection .circle::after {
+    background-image: url("../media/infection.svg");
+}
+.left-block .stomach .circle::after {
+    background-image: url("../media/stomach.svg");
+    background-size: 70% 70%;
+}
+
+/* центральная колонка */
+.center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.scheme3-item.b-cells {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+.scheme3-item.b-cells div:nth-child(1) {
+    width: 145px;
+    text-align: center;
+}
+
+.horizontal-block {
+    display: flex;
+    margin-top: 50px;
+}
+.horizontal-block .scheme3-item {
+    width: 160px;
+}
+
+.horizontal-block .scheme3-item:nth-child(1) {
+    text-align: right;
+    margin-right: 35px;
+}
+
+.scheme3-item.rectangle {
+    position: relative;
+    width: 180px;
+    font-size: 25px;
+    border: none;
+    margin: 65px 0 7px 0;
+}
+.arrow {
+    position: absolute;
+    width: 6px;
+}
+.arrow.tc {
+    top: -225px;
+    left: 50%;
+}
+.arrow.tl {
+    top: -67px;
+    left: 70px;
+}
+.arrow.tr {
+    top: -40px;
+    left: 109px;
+}
+.arrow:nth-child(4) img,
+.arrow:nth-child(5) img {
+    height: 50px;
+}
+.arrow:nth-child(4) {
+    top: -225px;
+    left: 70px;
+}.arrow:nth-child(5) {
+    top: -225px;
+    left: 109px;
+}
+.arrow:nth-child(6) {
+    top: -20px;
+    left: -40px;
+    transform: rotate(270deg);
+}
+.arrow:nth-child(7) {
+    width: 90px;
+    top: -45px;
+    left: -90px;
+    /*transform: rotate(270deg);*/
+}
+.center-block .small-arrows {
+    margin: 0;
+}
+.center-block .small-arrows img:first-child {
+    margin-right: 16px;
+}
+
+.scheme3-item.kidneys {
+    text-align: right;
+    display: flex;
+}
+
+/* правая колонка */
+.right-block {
+    margin-top: 80px;
+    margin-left: 35px;
+}
+
+.right-block .gradient-box {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    width: 270px;
+    border-radius: 40px;
+    padding: 20px;
+}
+.right-block .gradient-box .text {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.right-block .scheme3-item {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.scheme3-item.brain {
+    margin-bottom: 0;
+}
+.scheme3-item.b-cells .circle {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.small-arrows {
+    margin: 5px 0 5px 70px;
+}
+.small-arrows img:first-child {
+    transform: rotate(180deg);
+}
+
+.double-arrows {
+    position: absolute;
+}
+.double-arrows.medium.left {
+    width: 115px;
+    left: -10px;
+    top: 15%;
+}
+.double-arrows.medium.right {
+    width: 115px;
+    right: -10px;
+    top: 13%;
+    transform: scale(1, -1);
+}
+.double-arrows.medium.left img:nth-child(2),
+.double-arrows.medium.right img:nth-child(2) {
+    transform: rotate(180deg) translateY(10px);
+}
+
+.single-arrow {
+    position: absolute;
+    top: 140px;
+    left: -70px;
+}
+.double-arrows.big.left {
+    width: 135px;
+    transform: translate(-110px, 50px);
+}
+.double-arrows.big.left img:nth-child(1) {
+    transform: rotate(180deg) translateY(-70px);
+}
+.double-arrows.big.right img:nth-child(1) {
+    transform: rotate(180deg);
+}
+.double-arrows.big.right img:nth-child(2) {
+    transform: translateY(-70px);
+}
+
+.double-arrows.big.right {
+    width: 135px;
+    transform: scale(-1, 1) translate(-110px, 117px);
+
+}

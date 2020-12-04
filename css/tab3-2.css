@@ -4,7 +4,6 @@
     position: relative;
     width: 800px;
     height: 500px;
-    font-family: "Lato", sans-serif;
     font-size: 20px;
 }
 /* прямоугольник на 2ой схеме */
@@ -109,7 +108,9 @@
     transform: translate(-80px, -100px);
 }
 .scheme2-item.muscles .circle::after,
-.scheme2-item.liver .circle::after{
+.scheme2-item.liver .circle::after,
+.scheme3-item.muscles .circle::after,
+.scheme3-item.liver .circle::after {
     width: 60px;
     height: 60px;
 }

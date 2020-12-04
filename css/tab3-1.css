@@ -6,11 +6,15 @@
 }
 /* горизонтальные слайды */
 .slide {
-    height: 80vh;
+    /*height: 80vh;*/
     min-width: 100vw;
     scroll-snap-align: start;
 
     font-family: "Lato", sans-serif;
+}
+
+.slide__content {
+    margin: 0 auto;
 }
 /* цифры на схеме */
 b {
@@ -128,7 +132,7 @@ b {
     content: "β";
 
     font-weight: 600;
-    font-size: 60px;
+    font-size: 66px;
     line-height: 60px;
 }
 
