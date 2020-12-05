@@ -33,14 +33,15 @@
 
 .tab1 {
     background-image: url("../media/first_bcg.jpg");
-    /*padding: 145px 75px;*/
+    position: relative;
 }
 
 .tab1__title {
     width: 745px;
-
     letter-spacing: -1px;
     color: #0d319c;
+    padding: 115px 0 0 75px;
+    font-weight: 500;
 }
 
 .tab2 {
@@ -62,25 +63,41 @@
     background-image: url("../media/bcg3.jpg");
 }
 
+.tab3 ::-webkit-scrollbar {
+    display: none;
+}
+
 .slide__title {
     font-family: "Gotham Pro", sans-serif;
     font-size: 30px;
     font-weight: 100;
-    /*margin-bottom: 25px;*/
     margin-left: 10%;
     margin-top: 110px;
 }
 
 .slider__wrap {
-    width: 100%;
+    position: relative;
+    width: 70vw;
+    margin: 0 auto;
+}
+.slider__wrap span {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Gotham Pro", sans-serif;
+    margin-top: 15px;
+}
+.slider__wrap span:nth-child(2) {
+    position: absolute;
+    left: 45%;
+}.slider__wrap span:nth-child(3) {
+    position: absolute;
+    right: 0%;
 }
 .slider {
-    width: 640px;
+    width: 100%;
     height: 1px;
     outline: none;
     background: #d1eaff;
-    /*border: 12px solid #d1eaff;*/
-
     -webkit-appearance: none;
 }
 .slider::-webkit-slider-thumb {
@@ -92,4 +109,154 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
+}
+
+.control {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    z-index: 1;
+}
+.control-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.active,
+.control-dot:hover {
+    background-color: #f78b1f;
+}
+.control-dot:last-child {
+    margin-bottom: 0;
+}
+
+/* блоки на первой странице */
+.content-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-block__title {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #0d319c;
+}
+.content-block:nth-child(1) { /* верхний блок */
+    top: 34%;
+    left: 55%;
+    flex-direction: row-reverse;
+}
+.content-block:nth-child(2) { /* нижний левый блок */
+    top: 51%;
+    left: 22%;
+}
+.content-block:nth-child(3) { /* нижний средний блок */
+    top: 64%;
+    left: 36%;
+    align-items: flex-end;
+}
+.content-block:nth-child(4) { /* нижний правый блок */
+    top: 62%;
+    left: 77%;
+}
+.content-block:nth-child(2) .p-circle.little {
+    width: 15px;
+    height: 15px;
+}
+.content-block:nth-child(2) .p-circle.medium {
+    width: 25px;
+    height: 25px;
+}
+.content-block:nth-child(2) .p-circle.large {
+    width: 45px;
+    height: 45px;
+}
+.content-block:nth-child(3) .p-circle.little,
+.content-block:nth-child(4) .p-circle.little {
+    width: 10px;
+    height: 10px;
+}
+.content-block:nth-child(3) .p-circle.medium,
+.content-block:nth-child(4) .p-circle.medium {
+    width: 20px;
+    height: 20px;
+}
+.content-block:nth-child(3) .p-circle.large,
+.content-block:nth-child(4) .p-circle.large {
+    width: 25px;
+    height: 25px;
+}
+/* пульсирующие круги */
+.pulsate-circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.p-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+.p-circle.little {
+    width: 20px;
+    height: 20px;
+
+    z-index: 999;
+    background-image: radial-gradient(circle at center, #dd791b 1%, #cf1337 100%);
+    animation: animate-circle1 2s linear infinite;
+}
+.p-circle.medium {
+    width: 40px;
+    height: 40px;
+
+    z-index: 998;
+    background-image: radial-gradient(circle at center, #f2881e 1%, #f07822 100%);
+    border: 1px solid #f2881e;
+    animation: animate-circle2 2s linear infinite;
+}
+.p-circle.large {
+    width: 60px;
+    height: 60px;
+
+    z-index: 997;
+    background-color: rgba(247,139,31,0.22);
+    border: 1px solid #f2881e;
+    animation: animate-circle3 2s linear infinite;
+}
+@keyframes animate-circle1 {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: .9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.5;
+    }
+}
+@keyframes animate-circle2 {
+    0% {
+        transform: translate(-50%, -50%) scale(.5);
+        opacity: .9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.3;
+    }
+}
+@keyframes animate-circle3 {
+    0% {
+        transform: translate(-50%, -50%) scale(.25);
+        opacity: .9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.3;
+    }
 }

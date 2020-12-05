@@ -1,5 +1,5 @@
 /* обертка горизонтальных слайдов */
-.slide__wrap {
+.slides__wrap {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
